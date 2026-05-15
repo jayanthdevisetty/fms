@@ -1,13 +1,17 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://fms2.netlify.app/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://fms-cfez.onrender.com/api',
   timeout: 15000
 });
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('fms_token');
-  if (token) config.headers.Authorization = `Bearer ${token}`;
+
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+
   return config;
 });
 
@@ -18,6 +22,7 @@ api.interceptors.response.use(
       localStorage.removeItem('fms_token');
       localStorage.removeItem('fms_user');
     }
+
     return Promise.reject(error);
   }
 );
