@@ -1,1 +1,0 @@
-import{r as e}from"./index-DOKbX2VV.js";const i=(n,o=[])=>{const[u,s]=e.useState(null),[l,a]=e.useState(!0),[f,c]=e.useState(null),r=e.useCallback(async()=>{a(!0),c(null);try{const t=await n();return s(t),t}catch(t){throw c(t),t}finally{a(!1)}},o);return e.useEffect(()=>{r().catch(()=>{})},[r]),{data:u,loading:l,error:f,refresh:r,setData:s}};export{i as u};

@@ -1,1 +1,0 @@
-const e=(t=0)=>new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(Number(t||0)),n=t=>t?new Intl.DateTimeFormat("en-IN",{day:"2-digit",month:"short",year:"numeric"}).format(new Date(t)):"",r=(t=new Date)=>new Date(t).toISOString().slice(0,10);export{e as c,r as i,n as s};
