@@ -1,0 +1,27 @@
+
+> fms-backend@1.0.0 dev
+> nodemon server.js
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+MongoDB connected: ac-cetymvo-shard-00-01.iftvpvt.mongodb.net
+FMS API running on port 5000
+[0mGET /health [32m200[0m 8.258 ms - 32[0m
+[0mPOST /api/auth/login [32m200[0m 413.418 ms - 279[0m
+[0mGET /api/dashboard [32m200[0m 503.057 ms - 306[0m
+[0mGET /api/dashboard [36m304[0m 192.578 ms - -[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+MongoDB connected: ac-cetymvo-shard-00-01.iftvpvt.mongodb.net
+FMS API running on port 5000
+[0mGET /health [32m200[0m 5.837 ms - 32[0m
+[0mGET /api/dashboard [36m304[0m 476.834 ms - -[0m
+[0mGET /api/dashboard [36m304[0m 162.107 ms - -[0m
+[0mGET /api/dashboard [36m304[0m 230.735 ms - -[0m
+[0mGET /api/dashboard [36m304[0m 171.268 ms - -[0m
+[0mGET /api/transactions?search=&type=&category=&limit=50 [32m200[0m 89.075 ms - 41[0m
+[0mGET /api/transactions?search=&type=&category=&limit=50 [36m304[0m 93.510 ms - -[0m
